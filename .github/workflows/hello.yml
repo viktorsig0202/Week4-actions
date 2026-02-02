@@ -1,12 +1,8 @@
 name: Hello World
-
-on:
-  push:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello, GitHub Actions!"
+      - run: echo "Hello"
